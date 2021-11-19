@@ -14,6 +14,7 @@ public class RedisRunner implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         redisService.addWord("사랑", "사랑", 1);
+
         redisService.addWord("낚시꾼", "낙시꾼", 1);
         redisService.addWord("새까맣다", "새까마타", 1);
         redisService.addWord("봄", "봄", 1);
@@ -90,6 +91,7 @@ public class RedisRunner implements ApplicationRunner {
         redisService.addSentence("한국 사람의 구미에 맞는 음식", "한국 사람의 구미에 맞는 음식",1);
         redisService.addSentence("나는 대학을 졸업하고 진로를 바꿔 무역업에 뛰어들었다", "나는 대학을 조러파고 질로를 바꿔 무여겁에 뛰어들었다",1);
         redisService.addSentence("우리들은 졸업을 앞두고 사진을 찍기로 했다", "우리들은 조럽을 압뚜고 사진을 찍기로 했다",1);
+
 
     }
 }
